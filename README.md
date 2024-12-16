@@ -1,6 +1,6 @@
 # README
 
-![rosmontis](.\res\README_res\rosmontis.jpg)
+![rosmontis](./res/README_res/rosmontis.jpg)
 
 
 
@@ -16,7 +16,7 @@
 
 我们在项目开发的初期就为自定义模型做好了准备，原理非常简单，我们不妨来看看项目目录的结构：
 
-![1](.\res\README_res\1.png)
+![1](./res/README_res/1.png)
 
 请注意，为了明日方舟爱好者的共同协作，该项目并未打包成 **.exe** 可执行文件，所以需要您自行安装 **pycharm** 或者其他的**IDE** & 我们的第三方包以运行我们的桌面宠物程序，请放心，这些操作非常简单，在文档中我们会详述如何安装**pycharm** 以及如何安装该项目所需的第三方包来运行我们可爱的小桌宠
 
@@ -26,52 +26,52 @@
 
    首先，我们找到**pycharm**的官方网站，网站网址：`(https://www.jetbrains.com/pycharm/download/?section=windows#section=windows)`
 
-   ![2](.\res\README_res\2.png)
+   ![2](./res/README_res/2.png)
 
    可以看到这里打开界面是 **PyCharm Professional** （专业版PyCharm）但这个需要付费，不付费的话只能试用30天
 
    我们向下浏览
 
-   ![3](.\res\README_res\3.png)
+   ![3](./res/README_res/3.png)
 
    可以看到，伟大的 **JET Brains** 为我们提供了免费的社区版本，我们点击Download，将安装包任意保存，等待安装包下载
 
    由于服务器在外网，故下载网速可能较慢，我们这里在项目中提供社区版本的安装包：
 
-   ![4](.\res\README_res\4.png)
+   ![4](./res/README_res/4.png)
 
    一路默认安装下来即可
 
 2. 使用安装的PyCharm来打开我们的程序
 
-   ![5](.\res\README_res\5.png)
+   ![5](./res/README_res/5.png)
 
    点击`Open`，打开您从 **Github** 克隆下来的项目路径，这样我们就可以看见我们的项目了
 
-   ![6](.\res\README_res\6.png)
+   ![6](./res/README_res/6.png)
 
 3. 确保你已经安装了`cv2`（OpenCV）、`os`、`numpy`和`tqdm`库。要是没有，就像给电脑施魔法一样，用`pip install`命令把它们安装好。比如：`pip install opencv-python`、`pip install tqdm`等。
 
-   ![7](.\res\README_res\7.png)
+   ![7](./res/README_res/7.png)
 
    正常情况下您应该会出现下面的情况，莫慌，光标移到灰色的import语句之后点击`Install package`，IDE会自动助您安装未安装的包，其他情况皆是如此，速度可能有些慢，直到右下角出现：
 
-   ![8](.\res\README_res\8.png)
+   ![8](./res/README_res/8.png)
 
    代表包安装成功，按照红色下划线提示，安装所有您缺失的包，我们可以进行下一步了
 
 ### 准备工作-模型资源的准备（以明日方舟Wiki提供的为例，其他途径的资源依此类推）
 
-![9](.\res\README_res\9.png)
+![9](./res/README_res/9.png)
 
 我们在浏览器中搜索`明日方舟Wiki`或使用我提供的超链接：[首页 - PRTS - 玩家共同构筑的明日方舟中文Wiki](https://prts.wiki/w/首页)
 
 于搜索栏中搜索您喜爱的角色
 
-![10](.\res\README_res\10.png)
+![10](./res/README_res/10.png)
 
 点击载入干员模型
-![11](.\res\README_res\11.png)
+![11](./res/README_res/11.png)
 
 可以选择下载的webm背景色，如干员 **斯卡蒂** 的眼睛是红色，故我们使用绿色背景，同理，如果模型中存在绿色或者使用绿色底图抠图效果差，那么我们使用红色背景以防程序的误抠图，名称不用更改，尽可能保存webm资源在项目文件夹中
 
@@ -81,7 +81,7 @@
 
 1. 找到我们为您准备的抠图工具程序，有`切割 webm_green.py（切割绿色底）`和`切割 webm_red.py（切割红色底）`两个文件，同理，未安装包的按照上文所述操作安装第三方包
 
-   ![12](.\res\README_res\12.png)
+   ![12](./res/README_res/12.png)
 
 2. 打开对应的文件（绿色底用`切割 webm_green.py`，红色底用`切割 webm_red.py`）
 
@@ -91,13 +91,13 @@
 
 5. 请参考我给出的模型存储，例如`amiya_frames`和`rosmontis_frames`的格式，注意模型文件夹里的动作状态命名请不要更改，注意`sound`文件夹里的音频也要存放哦，音频同样是在Wiki当中去找
 
-   ![13](.\res\README_res\13.png)
+   ![13](./res/README_res/13.png)
 
    做好这一切后我们就可以在运行桌面宠物的时候通过右键点击切换Model来进行模型的切换了，需要重启程序以切换Model，设置参数保存在了`settings.json`当中。
 
    
 
-   ![14](.\res\README_res\14.png)
+   ![14](./res/README_res/14.png)
 
    ***Tips:***  当点击小宠物一定次数后，可能有小彩蛋会出现哦，不妨去试试呢
 
